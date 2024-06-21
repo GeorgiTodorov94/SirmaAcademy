@@ -1,0 +1,29 @@
+h1 {
+    color: maroon;
+    margin-left: 40px;
+
+}
+body {
+    background-color: linen;
+}
+p.redParagraph {
+    color: red;
+}
+p.blueParagraph {
+    color: blue;
+}
+p#purpleParagraph {
+    color:purple;
+}
+div > p {
+    color: rgb(205, 199, 199);
+}
+div span p {
+    color: greenyellow;
+}
+div span p#targetedParagraph {
+    color: green;
+}
+div span p.thisIsFun {
+    color: saddlebrown;
+}

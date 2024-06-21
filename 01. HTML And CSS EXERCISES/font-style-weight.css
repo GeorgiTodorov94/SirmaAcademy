@@ -1,0 +1,36 @@
+h1 {
+    font-style: oblique;
+    font-size: 34px;
+    font-weight: 200;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+p#firstLorem {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 150;
+}
+
+p#secondLorem {
+    font-size: 25px;
+    color: darkslategray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 250;
+}
+
+div#thirdLorem p {
+    font-size: large;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+
+p#forthLorem {
+    font-size: larger;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50em;
+}

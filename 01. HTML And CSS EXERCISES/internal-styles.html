@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Styles</title>
+</head>
+<body>
+    
+    <style>
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+
+        }
+        body {
+            background-color: linen;
+        }
+        p.redParagraph {
+            color: red;
+        }
+        p.blueParagraph {
+            color: blue;
+        }
+        p#purpleParagraph {
+            color:purple;
+        }
+        div > p {
+            color: rgb(205, 199, 199);
+        }
+        div span p {
+            color: greenyellow;
+        }
+        div span p#targetedParagraph {
+            color: green;
+        }
+        div span p.thisIsFun {
+            color: saddlebrown;
+        }
+    </style>
+    <h1>Paragraphs</h1>
+    <p class="redParagraph">Red Paragraph</p>
+    <p class="blueParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquam libero debitis officiis a iusto odio veritatis ex amet cupiditate vitae ipsum neque enim temporibus voluptates et, consectetur laudantium quasi.</p>
+    <p id="purpleParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquam libero debitis officiis a iusto odio veritatis ex amet cupiditate vitae ipsum neque enim temporibus voluptates et, consectetur laudantium quasi.</p>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minima veritatis nostrum aperiam quas dolorum quam magnam modi fuga magni porro, ad culpa, excepturi consectetur inventore praesentium delectus nihil possimus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt corporis possimus doloribus eius, nisi, iusto incidunt ut repellendus est officiis laborum saepe fugiat. Eligendi quaerat earum consequatur excepturi dolor? </p>
+            <span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatem quos dolor saepe fugit voluptatibus sit repudiandae cum atque, eius excepturi omnis sint, animi consequatur. Quis eaque consequuntur in quod?</p>
+                <p id="targetedParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatem quos dolor saepe fugit voluptatibus sit repudiandae cum atque, eius excepturi omnis sint, animi consequatur. Quis eaque consequuntur in quod?</p>
+                <p class="thisIsFun">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatem quos dolor saepe fugit voluptatibus sit repudiandae cum atque, eius excepturi omnis sint, animi consequatur. Quis eaque consequuntur in quod?</p>
+            </span>
+
+    </div>
+</body>
+</html>
