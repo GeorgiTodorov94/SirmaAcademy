@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="second-advanced-task.css"> -->
+    <title>Advanced Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1em;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #444444;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+            margin: auto;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .section-wrapper {
+            margin: 10px 10px 10px 10px;
+            /* padding: 10px; */
+            height: 100px;
+            width: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            gap: 10px;
+        }
+
+        .section-wrapper .section {
+            text-align: center;
+            padding: 5px;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            margin: 10px;
+            align-content: center;
+            font-size: 18px;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            display: grid;
+            margin: auto;
+            padding: 0;
+            position: relative;
+        }
+
+        @media (min-width: 1400px) {
+            body {
+                font-family: Arial, sans-serif;
+                margin: 1em;
+                padding: 1em;
+                box-sizing: border-box;
+            }
+
+            header,
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            footer {
+                font-size: 18px;
+            }
+
+            nav {
+                background-color: #444444;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px;
+                margin: auto;
+                gap: 20px;
+                font-size: 18px;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .container {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .section-wrapper {
+                margin: 10px 10px 10px 10px;
+                /* padding: 10px; */
+                height: 100px;
+                width: auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                text-align: center;
+                gap: 10px;
+            }
+
+            .section-wrapper .section {
+                text-align: center;
+                padding: 5px;
+                background-color: #ddd;
+                border: 1px solid #ccc;
+                margin: 10px;
+                align-content: center;
+                font-size: 18px;
+                background-color: #f4f4f4;
+            }
+
+            main {
+                display: grid;
+                margin: auto;
+                padding: 0;
+                position: relative;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 1399px) {
+            body {
+                font-family: Arial, sans-serif;
+                margin: 1em;
+                padding: 1em;
+                box-sizing: border-box;
+            }
+
+            header,
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            footer {
+                font-size: 18px;
+            }
+
+            nav {
+                background-color: #444444;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-content: first baseline;
+                padding: 0;
+                position: relative;
+                margin: auto;
+                /* gap: 20px; */
+                font-size: 18px;
+
+            }
+
+            nav {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 12px;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                display: grid;
+                text-align: center;
+                padding: 0;
+            }
+
+
+            .container {
+                padding: 1em;
+                margin: 1em;
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: 300px auto;
+
+            }
+
+            .first-grid-column {
+                display: block;
+                height: 100vh;
+                background-color: #444444;
+
+            }
+
+            .second-grid-column {
+                height: auto;
+            }
+
+
+
+            .section-wrapper {
+                margin: 10px 10px 10px 10px;
+                padding: 10px;
+                height: auto;
+                width: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+                gap: 10px;
+            }
+
+            .section-wrapper .section {
+                text-align: center;
+                padding: 25px;
+                background-color: #ddd;
+                border: 1px solid #ccc;
+                margin: 10px;
+                align-content: center;
+                font-size: 18px;
+                background-color: #f4f4f4;
+            }
+
+        }
+
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            .container {}
+
+            .section-wrapper {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                gap: 0;
+                margin: 10px;
+
+            }
+
+            .section-wrapper .section {
+                padding: 15px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .section-wrapper {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                gap: 0;
+                margin: 10px;
+
+            }
+
+            .section-wrapper .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="first-grid-column">
+
+            <nav>
+                <a href="#section-1 ">Section 1</a>
+                <a href="#section-2">Section 2</a>
+                <a href="#section-3">Section 3</a>
+                <a href="#section-4">Section 4</a>
+            </nav>
+        </div>
+
+        <div class="second-grid-column">
+            <header>
+                <h1>Advanced Responsive Design</h1>
+            </header>
+
+            <section class="section-wrapper">
+                <div id="section1" class="section">Section 1</div>
+                <div id="section2" class="section">Section 2</div>
+                <div id="section3" class="section">Section 3</div>
+                <div id="section4" class="section">Section 4</div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 Advanced Responsive Design</p>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

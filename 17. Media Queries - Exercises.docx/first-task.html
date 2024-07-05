@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Media Queries Task</title>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            font-family: inherit;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: #ddd;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-size: 16px;
+            gap: 10px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1199px) {
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            h1 {
+                font-size: 34px;
+                font-family: sans-serif;
+            }
+
+            footer {
+                font-size: 22px;
+                font-family: sans-serif;
+
+            }
+
+            .box:nth-child(3) {
+                margin: auto;
+            }
+
+            header {
+                padding: 16px 0;
+                font-size: 28px;
+            }
+
+            .container .box {
+                margin: 8px 0 8px 8px;
+                border: 1px solid #ccc;
+                text-align: center;
+                font-size: 22px;
+            }
+
+
+        }
+
+        @media (min-width: 1199px) {
+            .container {
+                background-color: inherit;
+                margin: 8px 0 8px 8px;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .box {
+                padding: 20px;
+                margin: 8px;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Design Example</h1>
+    </header>
+    <div class=container>
+        <div class=box>Box 1</div>
+        <div class=box>Box 2</div>
+        <div class=box>Box 3</div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Responsive Design</p>
+    </footer>
+</body>
+
+</html>
